@@ -1,0 +1,26 @@
+{
+    "name": "kewlar/composer-base-plugin",
+    "description": "A Composer plugin template to base your Composer plugins on.",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mindaugas Pelionis",
+            "email": "mindaugas.pelionis@gmail.com"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "~1.0"
+    },
+    "require-dev": {
+        "composer/composer": "~1.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kewlar\\": ""
+        }
+    },
+    "extra": {
+        "class": "Kewlar\\Composer\\BasePlugin"
+    }
+}
